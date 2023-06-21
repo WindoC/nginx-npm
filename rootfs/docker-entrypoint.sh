@@ -52,7 +52,7 @@ fi
 
 trap _exitpoint TERM EXIT INT
 
-nginx_auto_reload.sh &
+/scripts/nginx_auto_reload.sh &
 child=$!
 
 exec "$@"
