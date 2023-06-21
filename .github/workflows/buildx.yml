@@ -44,9 +44,9 @@ jobs:
       - 
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-        with:
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+        # with:
+        #   cache-from: type=gha
+        #   cache-to: type=gha,mode=max
       -
         name: Docker Buildx (build)
         run: |
