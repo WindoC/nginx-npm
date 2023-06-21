@@ -2,7 +2,7 @@ FROM nginx:latest
 
 WORKDIR /
 
-COPY rootfs/ .
+COPY rootfs/ /
 
 RUN mkdir -p /tmp/nginx/body /var/lib/nginx/cache /data/logs \
  && mkdir -p /etc/letsencrypt/live/placeholder /data/nginx/placeholder /data/custom_ssl/placeholder \
