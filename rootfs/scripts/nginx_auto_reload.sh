@@ -10,7 +10,7 @@ timesleep=$(($checkinterval_min*60))
 while true
 do
     sleep $timesleep
-    if [[ `find /data/nginx /data/nginx/* /data/custom_ssl /data/custom_ssl/* /etc/letsencrypt/live /etc/letsencrypt/live/* -type f ! -name "*.swp" -mmin -1 | wc -l` != 0 ]]
+    if [[ `find /data/nginx /data/custom_ssl /etc/letsencrypt/live -type f,l ! -name "*.swp" -mmin -1 | wc -l` != 0 ]]
     then
         echo "$0 - Detected Nginx Configuration Change."
         # timetosleep=$(( $RANDOM % 6 + 5 ))
