@@ -2,6 +2,11 @@
 
 nginx prepare for working with Nginx Proxy Manager (NPM) together.
 
+## debug
+
+```bash
+docker build -t nginx-npm .
+```
 
 ## Stack config
 
