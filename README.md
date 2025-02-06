@@ -6,6 +6,9 @@ nginx prepare for working with Nginx Proxy Manager (NPM) together.
 
 ```bash
 docker build -t nginx-npm .
+
+# test run
+docker run -it --rm nginx-npm
 ```
 
 ## Stack config
