@@ -1,3 +1,7 @@
+# ⚠️ Deprecation Notice
+
+This repository and image are no longer maintained, as I no longer use them personally. Without ongoing testing, I do not feel confident releasing this image publicly.
+
 # nginx
 
 nginx prepare for working with Nginx Proxy Manager (NPM) together.
